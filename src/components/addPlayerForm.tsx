@@ -51,7 +51,7 @@ export function Button({ buttonLabel, onclick }: ButtonProps) {
 
 
 
-export function AddPlayerForm({labelProps,inputProps,buttonprops}: formProps) {
+export function GetInputForm({labelProps,inputProps,buttonprops}: formProps) {
     
     const [response,setResponse] = useState("");
     const [playerName, setPlayerName] = useState("");
