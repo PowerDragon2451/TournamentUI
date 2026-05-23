@@ -1,37 +1,25 @@
 import React, { useState } from 'react';
 import { addNewPlayer } from '../api/players';
-
-
+import './getInputForm.css';
 interface LabelProps {
-
     labelName: string;
-
 }
 interface InputProps {
-
     inputType: string;
     inputId: string;
 
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;//onChange is a function, not a string so we have to use a event variables, since usestate will store the preivous state and current state its stored as an event variable
-
 }
 interface ButtonProps {
-
     buttonLabel: string;
-
-
     onclick: () => void;
 }
 
-
 interface formProps {
-
     labelProps: LabelProps;
     inputProps: InputProps;
     buttonprops: ButtonProps;
-
 }
-
 export function Label({ labelName }: LabelProps) {
     return (
         <label >{labelName}</label>
@@ -42,15 +30,11 @@ export function Input({ inputType, inputId, onChange }: InputProps) {
         <input type={inputType} id={inputId} onChange={onChange}></input>
     )
 }
-
 export function Button({ buttonLabel, onclick }: ButtonProps) {
     return (
         <button onClick={onclick}>{buttonLabel}</button>
     )
 }
-
-
-
 export function GetInputForm({ labelProps, inputProps, buttonprops }: formProps) {
 
     const [response, setResponse] = useState("");

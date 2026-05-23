@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getPlayerList } from '../api/players';
-
+import './showPlayerList.css';
 
 interface Player {
     name: string;

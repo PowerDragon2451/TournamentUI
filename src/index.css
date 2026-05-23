@@ -22,50 +22,5 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   background-color: #964f4f;
   text-align: center;
-
 }
 
-.playerList {
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  th,
-  td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #DDD;
-  }
-
-}
-
-.InputForm {
-  /* width: 90%; */
-  border: 15px solid rgb(255, 184, 194);
-  /* padding: 25px; */
-
-  margin: 20px;
-  border-radius: 25px;
-  background-color: #5c8f14;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #964f4f;
-  text-align: center;
-
-
-  
-button {
-  font-family: Verdana, 'Geneva', Tahoma, sans-serif;
-  border-style: double;
-  border-color: antiquewhite;
-}
-
-button:hover {
-  background-color: aquamarine
-}
-
-
-}

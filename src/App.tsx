@@ -10,6 +10,7 @@ function App() {
         <GetInputForm labelProps={{ labelName: "Player Name: " }} inputProps={{ inputType: "text", inputId: "playerInput", onChange: () => { } }} buttonprops={{ buttonLabel: "Submit", onclick: () => { } }} />
       </div>
       <ShowPlayerList></ShowPlayerList>
+      
     </div>
   );
 }
