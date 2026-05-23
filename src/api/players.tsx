@@ -17,6 +17,16 @@ export async function addPlayer(responseId:string) {
     (document.getElementById(responseId)as HTMLInputElement).innerText="Exception Occured" +exception;
   }
 };
+export async function getPlayerList(){
+    let url="http://localhost:8080/tournament/get-players";
+
+    try{
+      let res=await axios.get(url);
+      return res.data;
+    }catch(exception){
+      return "Exception Occured" +exception;
+    }
+};
 
 export async function addNewPlayer(playername:string) {
    

@@ -1,11 +1,15 @@
-import { GetInputForm } from './components/addPlayerForm';
+import { GetInputForm } from './components/GetInputForm';
 
 
 function App() {
   return (
     <div className="App">
       <h1>Tournament Groups</h1>
-      <GetInputForm labelProps={{ labelName: "Add Players" }} inputProps={{ inputType: "text", inputId: "playerInput", onChange: () => { } }} buttonprops={{ buttonLabel: "Submit", onclick: () => { } }} />
+      <div className="InputForm">
+        <GetInputForm labelProps={{ labelName: "Player Name: " }} inputProps={{ inputType: "text", inputId: "playerInput", onChange: () => { } }} buttonprops={{ buttonLabel: "Submit", onclick: () => { } }} />
+        
+      </div>
+
     </div>
   );
 }
