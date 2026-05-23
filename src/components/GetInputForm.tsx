@@ -10,7 +10,7 @@ interface LabelProps {
 interface InputProps {
 
     inputType: string;
-    inputId:string;
+    inputId: string;
 
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;//onChange is a function, not a string so we have to use a event variables, since usestate will store the preivous state and current state its stored as an event variable
 
@@ -18,26 +18,26 @@ interface InputProps {
 interface ButtonProps {
 
     buttonLabel: string;
-    
+
 
     onclick: () => void;
 }
 
 
-interface formProps{
+interface formProps {
 
-    labelProps:LabelProps;
-    inputProps:InputProps;
-    buttonprops:ButtonProps;
+    labelProps: LabelProps;
+    inputProps: InputProps;
+    buttonprops: ButtonProps;
 
 }
 
-export function Label({ labelName}: LabelProps) {
+export function Label({ labelName }: LabelProps) {
     return (
         <label >{labelName}</label>
     )
 }
-export function Input({ inputType ,inputId ,onChange}: InputProps) {
+export function Input({ inputType, inputId, onChange }: InputProps) {
     return (
         <input type={inputType} id={inputId} onChange={onChange}></input>
     )
@@ -51,20 +51,20 @@ export function Button({ buttonLabel, onclick }: ButtonProps) {
 
 
 
-export function GetInputForm({labelProps,inputProps,buttonprops}: formProps) {
-    
-    const [response,setResponse] = useState("");
+export function GetInputForm({ labelProps, inputProps, buttonprops }: formProps) {
+
+    const [response, setResponse] = useState("");
     const [playerName, setPlayerName] = useState("");
-    
+
     //event prevent defautl on submit so we dont lose out response after a second
-    
+
     return (
-        <form onSubmit={(event) => event.preventDefault()}> 
+        <form onSubmit={(event) => event.preventDefault()}>
             <Label labelName={labelProps.labelName} />
-            <Input inputType={inputProps.inputType} inputId={inputProps.inputId} onChange={(event)=>setPlayerName(event.target.value)}/>
-            <Button buttonLabel={buttonprops.buttonLabel} onclick={async () => {const result = await addNewPlayer(playerName); setResponse(result);}}></Button>
+            <Input inputType={inputProps.inputType} inputId={inputProps.inputId} onChange={(event) => setPlayerName(event.target.value)} />
+            <Button buttonLabel={buttonprops.buttonLabel} onclick={async () => { const result = await addNewPlayer(playerName); setResponse(result); }}></Button>
             <p>{response}</p>
         </form>
-        
+
     )
 };

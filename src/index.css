@@ -5,43 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 243, 243);
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-button {
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
-    border-style: double;
-    border-color: antiquewhite;
-}
-button:hover {
-    background-color:aquamarine
-}
+
 h1 {
-    width: 90%;
-    border: 15px solid rgb(255, 184, 194);
-    padding: 25px;
-    margin: 20px;
-    
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #964f4f;
-    text-align: center;
+  width: 90%;
+  border: 15px solid rgb(255, 184, 194);
+  padding: 25px;
+  margin: 20px;
+
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #964f4f;
+  text-align: center;
 
 }
-.InputForm{
-    /* width: 90%; */
-    border: 15px solid rgb(255, 184, 194);
-    /* padding: 25px; */
-    
-    margin: 20px;
-    border-radius: 25px;
-    background-color: #5c8f14;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #964f4f;
-    text-align: center;
+
+.playerList {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+
+}
+
+.InputForm {
+  /* width: 90%; */
+  border: 15px solid rgb(255, 184, 194);
+  /* padding: 25px; */
+
+  margin: 20px;
+  border-radius: 25px;
+  background-color: #5c8f14;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #964f4f;
+  text-align: center;
+
+
+  
+button {
+  font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+  border-style: double;
+  border-color: antiquewhite;
+}
+
+button:hover {
+  background-color: aquamarine
+}
+
 
 }
