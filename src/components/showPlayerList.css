@@ -2,6 +2,7 @@
 
   table-layout: auto;
   border-collapse: collapse;
+  
   margin: 0%;
   border-radius: 25px;
   padding: 20px;
@@ -9,10 +10,10 @@
   height: 150px;
   
   font-family: 'Courier New', Courier, monospace;
-  background-color:#112240;
   text-align: center;
-  color:#ccd6f6;
 
+  color:#ccd6f6;
+  background-color:#112240;
 }
 .playerList tr,
 .playerList td{

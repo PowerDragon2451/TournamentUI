@@ -5,6 +5,7 @@
 .Layout{
   display: flex;
   height:100vh;
+  
   padding: 12px;
   gap: 12px;
 }
@@ -12,17 +13,26 @@
   width:250px;
   border-radius: 12px;
   background-color:#112240;
+
 }
 .mainBody{
   display:flex;
   justify-content: center;
   align-items: center;
+
+
   border-radius: 12px;
+
   flex:1;
+
+  padding: 12px;
+  gap: 12px;
+
   background-color:#121212;
 }
 .rightSideBar{
   width: 250px;
   border-radius: 12px;
+
   background-color:#112240;
 }
