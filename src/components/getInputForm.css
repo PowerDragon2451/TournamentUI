@@ -1,17 +1,17 @@
 .InputForm {
 
-  border: 15px solid rgb(255, 184, 194);
+  
 
-
-  margin: 20px;
+  margin: 0%;
   border-radius: 25px;
-  background-color: #5c8f14;
   padding: 20px;
   width: 200px;
   height: 150px;
+
   font-family: 'Courier New', Courier, monospace;
-  background-color: #964f4f;
+  background-color: #112240;
   text-align: center;
+  color:#ccd6f6;
 
 }
 
@@ -19,9 +19,10 @@
 button {
   font-family: Verdana, 'Geneva', Tahoma, sans-serif;
   border-style: double;
-  border-color: antiquewhite;
+  border-color: #112240;
+  
 }
 
 button:hover {
-  background-color: aquamarine
+  background-color:#112240;
 }

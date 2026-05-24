@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 243, 243);
+  background-color:#0f172a;
+  
 }
 
 code {
@@ -15,12 +16,13 @@ code {
 
 h1 {
   width: 90%;
-  border: 15px solid rgb(255, 184, 194);
+  border: 15px solid #112240;
+  border-radius: 12px;
   padding: 25px;
   margin: 20px;
 
   font-family: 'Courier New', Courier, monospace;
-  background-color: #964f4f;
+  background-color:#112240;
   text-align: center;
 }
 
